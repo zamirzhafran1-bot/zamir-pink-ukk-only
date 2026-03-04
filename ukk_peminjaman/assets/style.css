@@ -1,0 +1,150 @@
+/* ===== Background Cerah Animated ===== */
+body {
+    background: linear-gradient(
+        135deg,
+        #ff9a9e,
+        #fad0c4,
+        #fbc2eb,
+        #a6c1ee
+    );
+    background-size: 300% 300%;
+    animation: gradientMove 12s ease infinite;
+    min-height: 100vh;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Animasi Gradient */
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* ===== Glass Effect KHUSUS ===== */
+.glass-card {
+    background: rgba(255, 255, 255, 0.35);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    border-radius: 20px;
+    border: 1px solid rgba(255,255,255,0.4);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+    color: #2d3436;
+}
+
+/* ===== Text ===== */
+h3, h4, h5 {
+    color: #6c5ce7;
+    font-weight: bold;
+}
+
+small {
+    color: #555;
+}
+
+/* ===== Input ===== */
+input, select {
+    background: rgba(255,255,255,0.7) !important;
+    border: 1px solid rgba(0,0,0,0.1) !important;
+    border-radius: 12px !important;
+    color: #2d3436 !important;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+input::placeholder {
+    color: #888;
+}
+
+input:focus, select:focus {
+    border-color: #6c5ce7 !important;
+    box-shadow: 0 0 8px rgba(108,92,231,0.4);
+}
+
+/* ===== Tombol ===== */
+.btn-primary {
+    background: linear-gradient(45deg, #ff7eb3, #6c5ce7);
+    border: none;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+/* ===== Alert ===== */
+.alert {
+    background: rgba(255, 0, 0, 0.15);
+    border: 1px solid rgba(255,0,0,0.3);
+    color: #c0392b;
+    border-radius: 12px;
+}
+/* ================= DASHBOARD GLOBAL ================= */
+
+.dashboard-wrapper{
+    padding:25px;
+}
+
+/* ===== CARD UTAMA ===== */
+.dashboard-card{
+    background: rgba(255,255,255,0.7);
+    backdrop-filter: blur(18px);
+    border-radius: 20px;
+    border: 1px solid rgba(255,255,255,0.3);
+    transition:0.3s;
+}
+
+.dashboard-card:hover{
+    transform: translateY(-6px);
+    box-shadow:0 15px 30px rgba(0,0,0,0.15);
+}
+
+/* ===== STAT CARD ===== */
+.stat-card{
+    position:relative;
+    padding:25px;
+    overflow:hidden;
+    text-align:center;
+}
+
+.stat-card h2{
+    font-size:32px;
+    font-weight:bold;
+}
+
+/* ICON STAT */
+.stat-icon{
+    font-size:45px;
+    position:absolute;
+    right:20px;
+    top:20px;
+    opacity:0.25;
+}
+
+/* ===== MENU CARD ===== */
+.menu-card{
+    text-align:center;
+    padding:25px;
+}
+
+.menu-icon{
+    font-size:40px;
+    color:#6c5ce7;
+    margin-bottom:10px;
+}
+
+/* ===== TIMELINE ===== */
+.timeline{
+    list-style:none;
+    padding-left:0;
+}
+
+.timeline li{
+    padding:10px 15px;
+    border-left:4px solid #6c5ce7;
+    margin-bottom:10px;
+    background:rgba(255,255,255,0.5);
+    border-radius:10px;
+}
